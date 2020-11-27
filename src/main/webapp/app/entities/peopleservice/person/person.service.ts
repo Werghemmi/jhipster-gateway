@@ -11,7 +11,7 @@ type EntityArrayResponseType = HttpResponse<IPerson[]>;
 
 @Injectable({ providedIn: 'root' })
 export class PersonService {
-  public resourceUrl = SERVER_API_URL + 'services/peopleservice/api/people';
+  public resourceUrl = SERVER_API_URL + 'services/people-service/api/people';
 
   constructor(protected http: HttpClient) {}
 

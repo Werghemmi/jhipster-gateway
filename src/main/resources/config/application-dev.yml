@@ -145,19 +145,4 @@ jhipster:
 # ===================================================================
 
 # application:
-zuul:
-  routes:
-    people:
-      path: http://peopleservice:80/**
-      url: http://localhost:8081/
-      service-id: peopleservice
-    google:
-      path: /google/**
-      url: https://www.google.com/
-ribbon:
-  eureka:
-    enabled: false
 
-people:
-  ribbon:
-    listOfServers: localhost:8080
