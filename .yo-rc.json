@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.werghemmi.gateway"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "gateway",
+    "baseName": "gatweway_service",
+    "packageName": "com.werghemmi.gateway",
+    "packageFolder": "com/werghemmi/gateway",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YmNiOGM1MzViMDJkMDE5ZTlmZGY0MGFhYmM4OWI2ZGI2ZWQwZmRhNzdlNWU5M2RjNzRlNzM3MGZlNTQ1ZDg2NTA0ZGM0OTQyN2JiYjQzNmIwYmE2MWE1YTZkOTYwMTc2NTk4MWMwMWVkMzY3YWI0ZDBjMTlmYzJhYzNmYjkwN2Y=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1606485085891,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
