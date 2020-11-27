@@ -16,6 +16,18 @@
 
 # See http://cloud.spring.io/spring-cloud-netflix/spring-cloud-netflix.html
 zuul: # those values must be configured depending on the application specific needs
+  routes:
+    peopleservice:
+      path: /peopleservice/**
+      url: http://localhost:8081/
+      service-id: peopleservice
+    google:
+      path: /google/**
+      url: https://www.google.com/
+    exemple:
+      path: /peopleservice:80/**
+      url: http://localhost:8081/
+
   sensitive-headers: Cookie,Set-Cookie #see https://github.com/spring-cloud/spring-cloud-netflix/issues/3126
   host:
     max-total-connections: 1000
@@ -24,6 +36,13 @@ zuul: # those values must be configured depending on the application specific ne
   semaphore:
     max-semaphores: 500
 
+ribbon:
+  eureka:
+    enabled: false
+
+peopleservice:
+  ribbon:
+    listOfServers: localhost:8080
 # See https://github.com/Netflix/Hystrix/wiki/Configuration
 hystrix:
   command:
@@ -182,3 +201,6 @@ jhipster:
 # ===================================================================
 
 # application:
+
+# application:
+

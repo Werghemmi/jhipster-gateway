@@ -1,7 +1,8 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "com.werghemmi.gateway"
+      "packageName": "com.werghemmi.gateway",
+      "microservicePath": "../people-service"
     },
     "jhipsterVersion": "6.10.5",
     "applicationType": "gateway",
